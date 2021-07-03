@@ -1,6 +1,6 @@
 ---
 image: ""
-name: Andrea B.
+refName: Andrea B.
 ---
 
 text reference 1

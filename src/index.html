@@ -4,14 +4,14 @@ title: Tschechisch Lernen
 ---
 
 {%- for page in collections.pages | sortByOrder -%}
-<div id="{{ page.data.id }}">{{ page.data.title }}<div>{{ page.templateContent | safe}}</div>
+<div id="{{ page.data.id }}">{{ page.data.title }}<div>{{ templateContent | safe}}</div>
 </div>
 {%- endfor -%}
 
 {% include "./_includes/partials/kurse.html" %}
 
 {%- for reference in collections.references -%}
-<div>{{ reference.data.name }}</div>
+<div>{{ reference.data.refName }}</div>
 <div>{{ reference.templateContent | safe}}</div>
 {%- endfor -%}
 

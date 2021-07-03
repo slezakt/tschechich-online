@@ -1,6 +1,6 @@
 ---
 image: ""
-name: Silke W.
+refName: Silke W.
 ---
 
 text reference 2

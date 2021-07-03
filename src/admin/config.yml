@@ -49,7 +49,7 @@ collections:
       preview: true
     fields:
       - {label: Image, name: refImage, widget: image } 
-      - {label: Name, name: refname, widget: string}
+      - {label: Name, name: refName, widget: string}
       - {label: Text, name: refText, widget: markdown}           
   - label: "Settings"
     name: "settings"
