@@ -1,21 +1,6 @@
 <div class="w-full max-w-2xl grid grid-cols-1 lg:grid-cols-2 gap-4 my-8 px-4 lg:mx-0">
 
-    {% set pageslist = collections.page %}
-
-    <pre>
-        {{pageslist}}
-    </pre>
-
-    {% for page in pageslist | reverse %}
-    <article class="my-8">
-        <h2 class="font-bold text-3xl text-gray-900 mb-2">
-            <a href="{{ post.url | url }}">
-                {{ page.data.title }}
-            </a>
-        </h2>
-
-    </article>
-    {% endfor %}
+    {{uberMich.title}}
 
     {% if kontakts.links %}
 
