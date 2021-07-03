@@ -20,7 +20,7 @@ collections:
         file: "src/pages/uberMich.md"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: text}
+          - {label: Intro, name: intro, widget: markdown}
           - {label: Image, name: image, widget: image }
   - label: "Sections"
     name: "sections"
