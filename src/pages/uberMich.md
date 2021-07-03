@@ -6,5 +6,3 @@ id: uber-mich
 text: Nějaký text z **adminu ha ha**
 image: /static/img/jana-brenner.jpg
 ---
-
-Nějaké texty 
