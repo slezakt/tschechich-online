@@ -17,7 +17,7 @@ collections:
     files:
       - label: "Uber mich"
         name: "uberMich"
-        file: "src/_data/uberMich.yaml"
+        file: "src/pages/uberMich.md"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
@@ -41,6 +41,16 @@ collections:
               - { label: Text, name: text, widget: string }
               - { label: Price, name: price, widget: string }
               - { label: Time, name: time, widget: string }
+  - label: "References"
+    name: "references"
+    folder: "src/references"
+    create: true
+    editor:
+      preview: true
+    fields:
+      - {label: Image, name: refImage, widget: image } 
+      - {label: Name, name: refname, widget: string}
+      - {label: Text, name: refText, widget: markdown}           
   - label: "Settings"
     name: "settings"
     editor:

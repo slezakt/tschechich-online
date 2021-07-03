@@ -1,11 +1,13 @@
-<section id="kontakt">
-    <h2>Kontakt</h2>
-    <p>Interesse geweckt order haben Sie Fragen?<br />Kontaktieren Sie mich:</p>
-    <div>
-        {% for link in kontakts.links %}
-        <a href="">
-            <img src="{{ link.icon }}" alt="" class="w-6 h-6">
-        </a>
-        {% endfor %}
+<section class="bg-blue-100 py-8 lg:py-20" id="kontakt">
+    <div class="container mx-auto max-w-3xl">
+        <h2 class="text-center uppercase">Kontakt</h2>
+        <p class="text-center">Interesse geweckt order haben Sie Fragen?<br />Kontaktieren Sie mich:</p>
+        <div>
+            {% for link in kontakts.links %}
+            <a href="">
+                <img src="{{ link.icon }}" alt="" class="w-6 h-6">
+            </a>
+            {% endfor %}
+        </div>
     </div>
 </section>

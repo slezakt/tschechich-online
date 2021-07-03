@@ -1,0 +1,22 @@
+<section class="bg-blue-100 py-8 lg:py-20" id="kurse">
+    <div class="container mx-auto max-w-3xl">
+        <h2 class="text-center uppercase">Kurse</h2>
+        <div>
+            {% for kurse in kurses.kurses %}
+            <div>
+                <h3 class="flex">
+                    <img src="{{ kurse.icon }}" alt="" class="w-6 h-6">
+                    <span>
+                        {{ kurse.title }}
+                    </span>
+                </h3>
+                <p>{{kurse.text}}</p>
+                <div>
+                    <strong>{{kurse.price}}</strong>
+                    <span>{{kurse.time}}</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

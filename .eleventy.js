@@ -34,6 +34,22 @@ module.exports = function (eleventyConfig) {
       "./static/css/prism-tomorrow.css",
   });
 
+  //create collections
+  eleventyConfig.addCollection('pages', async (collection) => {
+    return collection.getFilteredByGlob('./src/pages/*.md');
+  });
+  eleventyConfig.addCollection('references', async (collection) => {
+    return collection.getFilteredByGlob('./src/references/*.md');
+  });
+
+
+  function sortByOrder(values) {
+    let vals = [...values]; 
+    return vals.sort((a, b) => Math.sign(a.data.order - b.data.order));
+  }
+
+  eleventyConfig.addFilter("sortByOrder", sortByOrder);
+
   // Copy Image Folder to /_site
   eleventyConfig.addPassthroughCopy("./src/static/img");
 
