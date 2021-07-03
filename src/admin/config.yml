@@ -22,7 +22,21 @@ collections:
         file: "src/_data/uber-mich.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }   
-          - { label: "Body", name: "body", widget: "markdown" }   
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Kurse"
+        name: "kurses"
+        file: "src/_data/kurses.yaml"
+        fields:
+          - label: Kurse
+            name: kurses
+            widget: list
+            collapsed: false
+            fields:
+              - { label: Icon, name: icon, widget: image }
+              - { label: Title, name: title, widget: string }
+              - { label: Text, name: text, widget: string }
+              - { label: Price, name: price, widget: string }
+              - { label: Time, name: time, widget: string } 
   - label: "Blog"
     name: "blog"
     folder: "src/posts"

@@ -1,0 +1,12 @@
+---
+kurses:
+  - icon: "src/static/img/icon.svg"
+    title: Kurz 1
+    text: text kurzu
+    price: $60
+    time: /monat
+  - icon: "src/static/img/icon.svg"
+    title: Kurz 2
+    text: text kurzu 2
+    price: $20
+    time: /30 min. 
