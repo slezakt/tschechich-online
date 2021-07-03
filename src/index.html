@@ -5,7 +5,7 @@ title: Tschechisch Lernen
 
 {%- for page in collections.pages | sortByOrder -%}
 <div id="{{ page.data.id }}">{{ page.data.title }}<div>{{ page.templateContent | safe}}</div>
-  <div>{{ page.data.intro }}</div>
+  <div>{{ page.data.text }}</div>
 </div>
 {%- endfor -%}
 
