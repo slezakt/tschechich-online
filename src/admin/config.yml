@@ -72,7 +72,7 @@ collections:
         name: "links"
         file: "src/_data/socials.yaml"
         fields:
-          - label: Socials
+          - label: Social
             name: links
             widget: list
             collapsed: false
