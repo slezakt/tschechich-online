@@ -1,0 +1,11 @@
+<section id="kontakt">
+    <h2>Kontakt</h2>
+    <p>Interesse geweckt order haben Sie Fragen?<br />Kontaktieren Sie mich:</p>
+    <div>
+        {% for link in kontakts.links %}
+        <a href="">
+            <img src="{{ link.icon }}" alt="" class="w-6 h-6">
+        </a>
+        {% endfor %}
+    </div>
+</section>
