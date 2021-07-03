@@ -12,6 +12,15 @@ public_folder: "/static/img"
 local_backend: true
 # publish_mode: editorial_workflow
 collections:
+- label: "Uber Mich"
+    name: "uber-mich"
+    folder: "src/uber-mich"
+    create: true
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
   - label: "Blog"
     name: "blog"
     folder: "src/posts"

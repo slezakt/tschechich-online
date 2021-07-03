@@ -1,10 +1,10 @@
 ---
 items:
-  - text: Menu One
-    url: "#"
-  - text: Menu Two
-    url: "#"
-  - text: Menu Three
-    url: "#"
-  - text: Blog
-    url: "/blog"
+  - text: Uber Mich
+    url: "#uber-mich"
+  - text: Kurse
+    url: "#kurse"
+  - text: Referenzen
+    url: "#referenzen"
+  - text: Kontakt
+    url: "#kontakt"
