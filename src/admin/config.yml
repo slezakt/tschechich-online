@@ -12,17 +12,20 @@ public_folder: "/static/img"
 local_backend: true
 # publish_mode: editorial_workflow
 collections:
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Uber mich"
+        name: "uber-mich"
+        file: "src/_data/uber-mich.yaml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
   - label: "Sections"
     name: "sections"
     editor:
       preview: false
     files:
-      - label: "Uber mich"
-        name: "text"
-        file: "src/pages/uber-mich.md"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }   
-          - { label: "Body", name: "body", widget: "markdown" }
       - label: "Kurse"
         name: "kurses"
         file: "src/_data/kurses.yaml"
