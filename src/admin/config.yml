@@ -19,7 +19,7 @@ collections:
     files:
       - label: "Uber mich"
         name: "text"
-        file: "src/_data/uber-mich.md"
+        file: "src/pages/uber-mich.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }   
           - { label: "Body", name: "body", widget: "markdown" }
@@ -37,6 +37,7 @@ collections:
               - { label: Text, name: text, widget: string }
               - { label: Price, name: price, widget: string }
               - { label: Time, name: time, widget: string } 
+              - { label: "Body", name: "body", widget: "markdown" }
   - label: "Blog"
     name: "blog"
     folder: "src/posts"
@@ -72,18 +73,28 @@ collections:
             fields:
               - { label: Title, name: text, widget: string }
               - { label: URL, name: url, widget: string }
-      - label: "Quick Links"
+      - label: "Kontakts"
         name: "links"
-        file: "src/_data/quicklinks.yaml"
+        file: "src/_data/kontakts.yaml"
         fields:
-          - label: Nav Items
+          - label: Kontakt
             name: links
             widget: list
             collapsed: false
             fields:
-              - { label: Title, name: title, widget: string }
-              - { label: URL, name: url, widget: string }
-              - { label: Description, name: desc, widget: string }
+              - { label: Icon, name: icon, widget: image }
+              - { label: Kontakt, name: kontakt, widget: string }
+      - label: "Socials"
+        name: "links"
+        file: "src/_data/socials.yaml"
+        fields:
+          - label: Socials
+            name: links
+            widget: list
+            collapsed: false
+            fields:
+              - { label: Icon, name: icon, widget: image }
+              - { label: URL, name: url, widget: string }        
       - label: "Meta Settings"
         name: "settings"
         file: "src/_data/settings.yaml"
