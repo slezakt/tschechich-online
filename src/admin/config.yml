@@ -30,8 +30,8 @@ collections:
         name: "kurses"
         file: "src/_data/kurses.yaml"
         fields:
-          - label: Kurse
-            name: kurses
+          - label: "Kurse"
+            name: "kurses"
             widget: list
             collapsed: false
             fields:
@@ -49,8 +49,8 @@ collections:
         name: "items"
         file: "src/_data/navigation.yaml"
         fields:
-          - label: Nav Items
-            name: items
+          - label: "Nav Items"
+            name: "items"
             widget: list
             allow_add: false
             collapsed: false
@@ -61,8 +61,8 @@ collections:
         name: "links"
         file: "src/_data/kontakts.yaml"
         fields:
-          - label: Kontakt
-            name: links
+          - label: "Kontakt"
+            name: "links"
             widget: list
             collapsed: false
             fields:
@@ -72,8 +72,8 @@ collections:
         name: "links"
         file: "src/_data/socials.yaml"
         fields:
-          - label: Social
-            name: links
+          - label: "Social"
+            name: "links"
             widget: list
             collapsed: false
             fields:
