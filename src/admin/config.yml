@@ -21,7 +21,8 @@ collections:
         name: "text"
         file: "src/pages/uber-mich.md"
         fields:
-          - { label: "Title", name: "title", widget: "string" } 
+          - { label: "Title", name: "title", widget: "string" }   
+          - { label: "Body", name: "body", widget: "markdown" }
       - label: "Kurse"
         name: "kurses"
         file: "src/_data/kurses.yaml"
@@ -36,7 +37,6 @@ collections:
               - { label: Text, name: text, widget: string }
               - { label: Price, name: price, widget: string }
               - { label: Time, name: time, widget: string } 
-              - { label: "Body", name: "body", widget: "markdown" }
   - label: "Blog"
     name: "blog"
     folder: "src/posts"
@@ -48,6 +48,7 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
       - widget: select
         label: "tags"
         name: "tags"
