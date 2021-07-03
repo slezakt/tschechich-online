@@ -21,8 +21,7 @@ collections:
         name: "text"
         file: "src/pages/uber-mich.md"
         fields:
-          - { label: "Title", name: "title", widget: "string" }   
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Title", name: "title", widget: "string" } 
       - label: "Kurse"
         name: "kurses"
         file: "src/_data/kurses.yaml"
