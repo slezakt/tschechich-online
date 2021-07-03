@@ -22,6 +22,8 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
           - {label: Image, name: image, widget: image }
+          fields:
+            - {label: Text, name: text, widget: markdown}
   - label: "Sections"
     name: "sections"
     editor:
