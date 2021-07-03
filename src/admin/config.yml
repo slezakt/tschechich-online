@@ -68,7 +68,17 @@ collections:
             fields:
               - { label: Icon, name: icon, widget: image }
               - { label: Kontakt, name: kontakt, widget: string }
-       
+      - label: "Socials"
+        name: "socialLinks"
+        file: "src/_data/socials.yaml"
+        fields:
+          - label: "Social"
+            name: "socialLinks"
+            widget: list
+            collapsed: false
+            fields:
+              - { label: SocialIcon, name: socailIcon, widget: image }
+              - { label: URL, name: url, widget: string }        
       - label: "Meta Settings"
         name: "settings"
         file: "src/_data/settings.yaml"
