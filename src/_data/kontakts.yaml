@@ -1,8 +1,7 @@
----
 links:
-  - icon: "src/static/img/icon.svg"
+  - icon: /static/img/phone-alt-solid.svg
     kontakt: 00420 777 210 304
-  - icon: "src/static/img/icon.svg"
+  - icon: /static/img/phone-alt-solid.svg
     kontakt: 00420 777 210 304
-  - icon: "src/static/img/icon.svg"
+  - icon: /static/img/envelope-solid.svg
     kontakt: info@info.de
