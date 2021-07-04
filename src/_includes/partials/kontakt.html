@@ -1,4 +1,4 @@
-<section class="bg-blue-100 py-8 lg:py-20" id="kontakt">
+<section class="bg-blue-100 p-6 py-8 lg:py-20" id="kontakt">
     <div class="container mx-auto max-w-3xl">
         <h2 class="text-center font-semibold text-4xl lg:text-5xl mb-8 lg:mb-12">Kontakt</h2>
         <p class="text-center text-xl mb-6">Interesse geweckt order haben Sie Fragen?<br />Kontaktieren Sie mich:</p>
@@ -24,10 +24,10 @@
                 </div>
             </form>
         </div>
-        <div class="flex justify-center mb-8">
+        <div class="flex flex-col md:flex-row justify-center mb-8">
             {% for link in kontakts.links %}
             <a href="{{ 'mailto:' if 'mail' in link.type else 'tel:' }}{{ link.kontakt }}"
-                class="flex items-center mr-6">
+                class="flex items-center mb-2 mr-6">
                 <img src="{{ link.icon }}" alt="" class="w-6 h-6 mr-2">
                 <span>{{ link.text }}</span>
             </a>

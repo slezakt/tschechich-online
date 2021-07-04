@@ -30,12 +30,15 @@ layout: default
       <div class="glide__slides">
         {%- for reference in collections.references -%}
 
-        <div class="rounded-md p-6 lg:p-10 shadow-blue glide__slide">
-          <div class="bg-gray-200 rounded-full w-24 h-24 flex items-center justify-center overflow-hidden mx-auto mb-8">
-            <img src="{{ reference.data.refImage }}" alt="" class="max-w-full">
+        <div class="rounded-md px-4 glide__slide">
+          <div class="shadow-blue p-6 lg:p-10">
+            <div
+              class="bg-gray-200 rounded-full w-24 h-24 flex items-center justify-center overflow-hidden mx-auto mb-8">
+              <img src="{{ reference.data.refImage }}" alt="" class="max-w-full">
+            </div>
+            <div class="text-center text-xl mb-4">{{ reference.data.refName }}</div>
+            <div class="prose">{{ reference.templateContent | safe}}</div>
           </div>
-          <div class="text-center text-xl mb-4">{{ reference.data.refName }}</div>
-          <div class="prose">{{ reference.templateContent | safe}}</div>
         </div>
 
         {%- endfor -%}
