@@ -1,12 +1,18 @@
----
 kurses:
-  - icon: "src/static/img/icon.svg"
-    title: Kurz 1
-    text: text kurzu
-    price: $60
-    time: /monat
-  - icon: "src/static/img/icon.svg"
-    title: Kurz 2
-    text: text kurzu 2
-    price: $20
-    time: /30 min. 
+  - icon: /static/img/group-5.svg
+    title: Individuelle Sprachbetreuung
+    text: Wie funktioniert es? Am Anfang werden wir Ihr Sprachniveau und die
+      Lernziele besprechen und definieren. Ich werde Ihnen den Umgang mit den
+      Online-Unterlagen erklären. Jede Woche schicke ich Ihnen eine
+      maßgeschneiderte Reihe von Aufgaben, von mir können Sie Korrekturen und
+      Feedback erwarten. Wir lernen gemeinsam, Sie werden allerdings selbständig
+      arbeiten.
+    price: €60
+    time: /Monat
+  - icon: /static/img/group-7.svg
+    title: Individuelle Lektionen per Zoom
+    text: Vergessen Sie Gruppenkurse, lernen Sie flexibel und individuell. Der
+      Inhalt der Lektion wird sich nach Ihrem Sprachniveau und Bedürfnissen
+      richten. Dabei legen wir besonderen Wert auf die Aussprache.
+    price: €20
+    time: /30 min.
