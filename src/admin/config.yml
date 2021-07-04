@@ -51,7 +51,7 @@ collections:
     fields:
       - {label: Image, name: refImage, widget: image } 
       - {label: Name, name: refName, widget: string}
-      - {label: Text, name: refText, widget: markdown}           
+      - {label: Text, name: body, widget: markdown}           
   - label: "Settings"
     name: "settings"
     editor:
