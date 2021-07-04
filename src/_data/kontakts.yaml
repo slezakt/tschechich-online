@@ -1,7 +1,13 @@
 links:
   - icon: /static/img/phone-alt-solid.svg
-    kontakt: 00420 777 210 304
+    text: 00420 777 210 304
+    kontakt: "00420777210304"
+    type: phone
   - icon: /static/img/phone-alt-solid.svg
-    kontakt: 00420 777 210 304
+    text:  0049 176 28920854
+    kontakt: "004917628920854"
+    type: phone
   - icon: /static/img/envelope-solid.svg
-    kontakt: info@info.de
+    text: info@tschechisch-online.de
+    kontakt: info@tschechisch-online.de
+    type: mail

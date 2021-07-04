@@ -1,19 +1,19 @@
-<section class="bg-blue-100 py-8 lg:py-20" id="kurse">
-    <div class="container mx-auto max-w-3xl">
-        <h2 class="text-center uppercase">Kurse</h2>
-        <div>
+<section class="bg-blue-100 p-6 lg:py-20" id="kurse">
+    <div class="container mx-auto max-w-5xl">
+        <h2 class="text-center font-semibold text-4xl lg:text-5xl mb-8 lg:mb-12">Kurse</h2>
+        <div class="md:grid md:grid-cols-2 gap-20">
             {% for kurse in kurses.kurses %}
-            <div>
-                <h3 class="flex">
-                    <img src="{{ kurse.icon }}" alt="" class="w-6 h-6">
+            <div class="bg-white rounded-md shadow-blue p-10 mb-10 lg:p-16 flex flex-col">
+                <h3 class="flex mb-8">
+                    <img src="{{ kurse.icon }}" alt="" class="w-12 h-12 mr-4 lg:w-16 lg:h-16 lg:mr-8">
                     <span>
                         {{ kurse.title }}
                     </span>
                 </h3>
-                <p>{{kurse.text}}</p>
-                <div>
-                    <strong>{{kurse.price}}</strong>
-                    <span>{{kurse.time}}</span>
+                <p class="mb-10 prose">{{kurse.text}}</p>
+                <div class="mt-auto text-center">
+                    <strong class="text-4xl">{{kurse.price}}</strong>
+                    <span class="text-gray-400">{{kurse.time}}</span>
                 </div>
             </div>
             {% endfor %}

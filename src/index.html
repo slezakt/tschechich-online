@@ -4,16 +4,40 @@ title: Tschechisch Lernen
 ---
 
 {%- for page in collections.pages | sortByOrder -%}
-<div id="{{ page.data.id }}">{{ page.data.title }}<div>{{ page.templateContent | safe}}</div>
-  {{ content | safe }}
-</div>
+<section id="{{ page.data.id }}" class="container mx-auto max-w-screen-lg p-6 lg:py-20">
+  <h2 class="text-center font-semibold text-4xl lg:text-5xl mb-8 lg:mb-12">{{ page.data.title }}</h2>
+  <div class="md:flex md:justify-between">
+    <div class="md:w-1/2 pr-20 prose">
+      {{ page.templateContent | safe}}
+    </div>
+    <div class="md:w-1/2">
+      <div class="relative overflow-hidden rounded-md shadow-blue">
+        <img src="{{ page.data.image }}" alt="" class="w-full">
+        <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-red-500 to-blue-500 opacity-50"></div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
 {%- endfor -%}
 
 {% include "./_includes/partials/kurse.html" %}
 
-{%- for reference in collections.references -%}
-<div>{{ reference.data.refName }}</div>
-<div>{{ reference.templateContent | safe}}</div>
-{%- endfor -%}
+<section class="container mx-auto max-w-screen-lg p-6 lg:py-20">
+  <h2 class="text-center font-semibold text-4xl lg:text-5xl mb-8 lg:mb-12">Referenzen</h2>
+  {%- for reference in collections.references -%}
+  <div class="container mx-auto">
+    <div class="rounded-md p-6 lg:p-10 shadow-blue">
+      <div>
+        <img src="{{ reference.data.refImage }}" alt="">
+      </div>
+      <div>{{ reference.data.refName }}</div>
+      <div>{{ reference.templateContent | safe}}</div>
+    </div>
+  </div>
+
+  {%- endfor -%}
+</section>
 
 {% include "./_includes/partials/kontakt.html" %}

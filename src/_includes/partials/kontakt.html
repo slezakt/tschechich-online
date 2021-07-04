@@ -1,11 +1,42 @@
 <section class="bg-blue-100 py-8 lg:py-20" id="kontakt">
     <div class="container mx-auto max-w-3xl">
-        <h2 class="text-center uppercase">Kontakt</h2>
-        <p class="text-center">Interesse geweckt order haben Sie Fragen?<br />Kontaktieren Sie mich:</p>
-        <div>
+        <h2 class="text-center font-semibold text-4xl lg:text-5xl mb-8 lg:mb-12">Kontakt</h2>
+        <p class="text-center text-xl mb-6">Interesse geweckt order haben Sie Fragen?<br />Kontaktieren Sie mich:</p>
+        <div class="mb-12">
+            <form name="contact" method="POST" data-netlify="true">
+                <label for="" class="flex mb-4">
+                    <input type="text" name="name" placeholder="Name"
+                        class="w-full rounded-md border-2 border-blue-300 px-4 py-3">
+                </label>
+                <label for="" class="flex mb-4">
+                    <input type="email" name="email" placeholder="E-mail"
+                        class="w-full rounded-md border-2 border-blue-300 px-4 py-3">
+                </label>
+                <label for="" class="flex mb-8">
+                    <textarea name="text" placeholder="Nachricht"
+                        class="w-full rounded-md border-2 border-blue-300 px-4 py-3 h-64"></textarea>
+                </label>
+                <div data-netlify-recaptcha="true"></div>
+                <input type="hidden" name="form-name" value="contact" />
+                <div class="flex justify-center">
+                    <input type="submit" value="Senden"
+                        class="bg-blue-500 text-white py-3 px-8 uppercase font-semibold text-xl rounded-md shadow-blue cursor-pointer hover:bg-red-500 transition-all">
+                </div>
+            </form>
+        </div>
+        <div class="flex justify-center mb-8">
             {% for link in kontakts.links %}
-            <a href="">
-                <img src="{{ link.icon }}" alt="" class="w-6 h-6">
+            <a href="{{ 'mailto:' if 'mail' in link.type else 'tel:' }}{{ link.kontakt }}"
+                class="flex items-center mr-6">
+                <img src="{{ link.icon }}" alt="" class="w-6 h-6 mr-2">
+                <span>{{ link.text }}</span>
+            </a>
+            {% endfor %}
+        </div>
+        <div class="flex justify-center">
+            {% for link in socials.socialLinks %}
+            <a href="{{ link.url }}" class="flex items-center mr-4">
+                <img src="{{ link.socialIcon }}" alt="" class="w-8 h-8 hover:opacity-80">
             </a>
             {% endfor %}
         </div>
