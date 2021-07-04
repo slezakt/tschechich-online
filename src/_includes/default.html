@@ -6,15 +6,16 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
-    {{title}}
+    {{settings.title}}
   </title>
-  {% if description %}
-  <meta name="description" content="{{description}}" />
-  {% endif %}
-  {% block head %}{% endblock %}
+  <meta name="description" content="{{settings.description}}" />
+  <meta name="keywords" content="{{settings.keywords}}" />
+  <meta name="author" content="Tomáš Slezák - www.tomasslezak.cz">
+  {% block head %}
   <link rel="stylesheet" href="/static/css/glide.core.min.css">
   <link rel="stylesheet" href="/static/css/glide.theme.min.css">
   <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+  {% endblock %}
 </head>
 
 <body>
@@ -48,7 +49,6 @@
       }
     }).mount()
   </script>
-  <script src="/static/js/app.js"></script>
 
 </body>
 
