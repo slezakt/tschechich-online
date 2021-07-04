@@ -12,10 +12,9 @@
   <meta name="description" content="{{description}}" />
   {% endif %}
   {% block head %}{% endblock %}
+  <link rel="stylesheet" href="/static/css/glide.core.min.css">
+  <link rel="stylesheet" href="/static/css/glide.theme.min.css">
   <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
-  {% if prism == true %}
-  <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
-  {% endif %}
 </head>
 
 <body>
@@ -31,6 +30,25 @@
   <!-- Needed only if you are using Netlify Identity feature -->
   <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   {% endif %}
+  <script src="/static/js/glide.min.js"></script>
+
+  <script>
+    new Glide('.glide', {
+      type: 'carousel',
+      gap: 20,
+      perView: 3,
+      breakpoints: {
+        760: {
+          perView: 2,
+          focusAt: 'center',
+        },
+        520: {
+          perView: 1,
+        }
+      }
+    }).mount()
+  </script>
+  <script src="/static/js/app.js"></script>
 
 </body>
 

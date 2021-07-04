@@ -1,5 +1,5 @@
 ---
-refImage: /static/img/path-17.svg
+refImage: https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Bill_Gates_-_Nov._8%2C_2019.jpg/395px-Bill_Gates_-_Nov._8%2C_2019.jpg
 refName: Bernd L.
 ---
 Neugierig verfolgte ich die der Situation geschuldeten Möglichkeiten des &quot;homeschoolings&quot; bei

@@ -30,8 +30,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",
     "./node_modules/alpinejs/dist/alpine.js": "./static/js/alpine.js",
+    "./node_modules/@glidejs/glide/dist/glide.min.js" : "./static/js/glide.min.js",
     "./node_modules/prismjs/themes/prism-tomorrow.css":
       "./static/css/prism-tomorrow.css",
+    "./node_modules/@glidejs/glide/dist/css/glide.core.min.css":
+      "./static/css/glide.core.min.css",
+      "./node_modules/@glidejs/glide/dist/css/glide.theme.min.css":
+      "./static/css/glide.theme.min.css",  
   });
 
   //create collections
@@ -52,6 +57,8 @@ module.exports = function (eleventyConfig) {
 
   // Copy Image Folder to /_site
   eleventyConfig.addPassthroughCopy("./src/static/img");
+
+  eleventyConfig.addPassthroughCopy("./src/static/js");
 
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
