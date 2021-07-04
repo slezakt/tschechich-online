@@ -1,6 +1,5 @@
----
 socialLinks:
-  - socialIcon: "src/static/img/icon.svg"
-    url: "https://intagram.com"
-  - socialIcon: "src/static/img/icon.svg"
-    url: "https://facebbok.com"  
+  - socialIcon: /static/img/instagram-brands.svg
+    url: https://intagram.com
+  - socialIcon: /static/img/facebook.svg
+    url: https://facebbok.com
