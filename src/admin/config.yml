@@ -80,6 +80,7 @@ collections:
             fields:
               - { label: Icon, name: icon, widget: image }
               - { label: Kontakt, name: kontakt, widget: string }
+              - { label: Text, name: text, widget: string }
       - label: "Socials"
         name: "socialLinks"
         file: "src/_data/socials.yaml"
