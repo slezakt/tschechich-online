@@ -2,8 +2,11 @@ const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
+const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(lazyImagesPlugin);
+
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
 
