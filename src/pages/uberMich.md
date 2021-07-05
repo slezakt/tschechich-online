@@ -1,5 +1,5 @@
 ---
-title: Uber mich
+title: Über mich
 layout: default
 order: 1
 id: uber-mich
