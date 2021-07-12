@@ -59,7 +59,7 @@
             {% for link in kontakts.links %}
             <a href="{{ 'mailto:' if 'mail' in link.type else 'tel:' }}{{ link.kontakt }}"
                 class="flex items-center mb-2 mr-6">
-                <img src="{{ link.icon }}" alt="" class="w-6 h-6 mr-2">
+                <img src="{{ link.icon }}" alt="" class="w-6 h-6 mr-2" width="24" height="24">
                 <span>{{ link.text }}</span>
             </a>
             {% endfor %}
@@ -67,7 +67,7 @@
         <div class="flex justify-center">
             {% for link in socials.socialLinks %}
             <a href="{{ link.url }}" class="flex items-center mr-4" target="_blank" rel="noopener">
-                <img src="{{ link.socialIcon }}" alt="" class="w-8 h-8 hover:opacity-80">
+                <img src="{{ link.socialIcon }}" alt="" class="w-8 h-8 hover:opacity-80" width="32" height="32">
             </a>
             {% endfor %}
         </div>
