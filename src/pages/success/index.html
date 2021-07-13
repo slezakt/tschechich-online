@@ -1,1 +1,36 @@
-úspěch
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {{settings.title}}
+    </title>
+    <meta name="description" content="{{settings.description}}" />
+    <meta name="keywords" content="{{settings.keywords}}" />
+    <meta name="author" content="Tomáš Slezák - www.tomasslezak.cz">
+    {% block head %}
+    <link rel="stylesheet" href="/static/css/glide.core.min.css">
+    <link rel="stylesheet" href="/static/css/glide.theme.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+    {% endblock %}
+</head>
+
+<body>
+    <div class="w-full min-h-screen bg-gradient-to-r from-red-500 to-blue-500 flex justify-center items-center shadow-2xl">
+        <div class="w-full max-w-4xl bg-white p-10 rounded-md">
+            <h1 class="mb-8">Vielen Dank!</h1>
+            <p class="mb-8 text-lg">Ihre Nachricht wurde gesendet.</p>
+            <p>
+                <a href="/" class="inline-flex bg-blue-500 text-white py-3 px-8 uppercase font-semibold text-xl rounded-md shadow-blue cursor-pointer hover:bg-red-500 transition-all">Zurück zu der Webseite</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="/static/js/alpine.js"></script>
+
+</body>
+
+</html>
