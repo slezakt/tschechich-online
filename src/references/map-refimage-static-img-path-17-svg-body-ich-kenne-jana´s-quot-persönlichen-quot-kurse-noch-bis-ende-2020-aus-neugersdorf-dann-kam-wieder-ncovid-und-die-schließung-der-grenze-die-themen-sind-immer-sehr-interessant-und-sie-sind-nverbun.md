@@ -1,5 +1,5 @@
 ---
-refImage: /static/img/path-17.svg
+refImage: /static/img/referenc-jens-t..jpg
 refName: Jens T.
 ---
 Ich kenne Jana´s &quot;persönlichen&quot; Kurse noch bis Ende 2020 aus Neugersdorf (dann kam wieder
