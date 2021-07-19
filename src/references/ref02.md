@@ -1,6 +1,6 @@
 ---
 image: ""
-refImage: /static/img/path-17.svg
+refImage: /static/img/silke-2.jpg
 refName: Silke W.
 ---
 Ich war länger als 4 Jahre im Unterricht bei Frau Brenner und habe dort gute Grundkenntnisse in
