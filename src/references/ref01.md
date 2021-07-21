@@ -1,6 +1,6 @@
 ---
 image: ""
-refImage: /static/img/path-17.svg
+refImage: /static/img/andrea-binder.jpg
 refName: Andrea B.
 ---
 Ich habe auf der Homepage das interessante Online-Angebot von Jana Brenner gesehen und mich
