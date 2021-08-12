@@ -1,5 +1,5 @@
 ---
-refImage: /static/img/path-17.svg
+refImage: /static/img/foto-jana-lambrich-ii.jpg
 refName: "Jana L. "
 ---
 Die interaktiven Onlineübungen machen Spaß und eignen sich gut zum Üben. Dabei habe ich viele interessante Informationen und Links zum Alltag in Tschechien erhalten, die in keinem Lehrbuch stehen und die ich sonst nie gefunden hätte.\
