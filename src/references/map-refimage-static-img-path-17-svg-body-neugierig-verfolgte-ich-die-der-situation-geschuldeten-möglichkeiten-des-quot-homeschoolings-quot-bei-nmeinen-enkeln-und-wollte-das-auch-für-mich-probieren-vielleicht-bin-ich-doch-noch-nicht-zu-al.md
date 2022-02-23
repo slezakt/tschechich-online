@@ -1,5 +1,5 @@
 ---
-refImage: /static/img/laptop-4551026_1280.jpg
+refImage: /static/img/senior.jpg
 refName: Bernd L.
 ---
 Neugierig verfolgte ich die der Situation geschuldeten Möglichkeiten des &quot;homeschoolings&quot; bei
