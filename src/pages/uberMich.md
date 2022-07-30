@@ -11,4 +11,4 @@ Tschechisch als Fremdsprache.
 
 Weiterbildung ist für mich sehr wichtig. Ich interessiere mich für moderne Methoden im
 Fremdsprachenunterricht und besuche regelmäßig Kurse, die meinem Unterricht noch mehr
-Effektivität und Spaß bringen.
+Effektivität und Spaß bringen
